@@ -1,10 +1,16 @@
+import Header from "./components/header/header";
+import QuickActionsPanel from "./components/quick-actions-panel/quick-actions-panel";
+import ResultPanel from "./components/result-panel/result-panel";
+import SearchBar from "./components/search-bar/search-bar";
+
 export default function Home() {
-  const items: Card[] = [];
+  //const items: Card[] = [];
+  const items: any = [];
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <Header />
       <SearchBar />
-      {items ? <ResultPanel /> : <QuickActionsPanel />}      
+      {items.length > 0 ? <ResultPanel /> : <QuickActionsPanel />}      
     </main>
   );
 }
