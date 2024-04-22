@@ -1,9 +1,21 @@
-import React from 'react'
+'use client';
+
+import React from 'react';
+import Card from '../card/card';
 
 const QuickActionsPanel = () => {
-  return (
-    <div>QuickActionsPanel</div>
-  )
-}
+    return (
+        <div className="flex flex-row justify-center gap-16 w-9/12 h-3/4">
+            <Card
+                cardDetails={{ name: 'Browse by Name' }}
+                onClick={() => console.log('klikłem')}
+            />
+            <Card
+                cardDetails={{ name: 'Browse by Location' }}
+                onClick={() => console.log('klikłem')}
+            />
+        </div>
+    );
+};
 
-export default QuickActionsPanel
+export default QuickActionsPanel;
