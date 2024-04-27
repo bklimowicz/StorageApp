@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import HeaderPanel from './components/header-panel/header-panel';
 import SearchBarPanel from './components/search-bar-panel/search-bar-panel';
+import FooterPanel from './components/footer-panel/footer-panel';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
                 <HeaderPanel />
                 <SearchBarPanel />
                 {children}
+                <FooterPanel />
             </body>
         </html>
     );
