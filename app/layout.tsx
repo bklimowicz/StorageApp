@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Header from './components/header/header';
-import SearchBar from './components/search-bar/search-bar';
+import HeaderPanel from './components/header-panel/header-panel';
+import SearchBarPanel from './components/search-bar-panel/search-bar-panel';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,8 +21,8 @@ export default function RootLayout({
             <body
                 className={`${inter.className} flex h-full w-full items-center flex-col`}
             >
-                <Header />
-                <SearchBar />
+                <HeaderPanel />
+                <SearchBarPanel />
                 {children}
             </body>
         </html>

@@ -18,7 +18,7 @@ interface CardDetails {
 const Card = ({ cardDetails, onClick }: CardProps) => {
     return (
         <div
-            className="flex flex-col justify-center items-center border-[1px] p-6 h-32 w-32"
+            className="flex flex-col justify-center items-center border-[1px] rounded p-6 h-32 w-32"
             onClick={onClick}
         >
             {cardDetails.image && (
