@@ -23,8 +23,7 @@ export default function RootLayout({
                 className={`${inter.className} flex h-full w-full items-center flex-col`}
             >
                 <HeaderPanel />
-                <SearchBarPanel />
-                {children}
+                <div className="w-full h-[700px]">{children}</div>
                 <FooterPanel />
             </body>
         </html>

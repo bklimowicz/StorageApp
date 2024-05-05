@@ -2,23 +2,12 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
-
-interface CardProps {
-    cardDetails: CardDetails;
-    onClick?: () => void;
-}
-
-interface CardDetails {
-    name: string;
-    description?: string;
-    image?: string | StaticImport;
-}
+import CardProps from './card-props';
 
 const Card = ({ cardDetails, onClick }: CardProps) => {
     return (
         <div
-            className="flex flex-col justify-center items-center border-[1px] rounded p-6 h-32 w-32"
+            className="flex flex-col justify-center items-center border-[1px] rounded p-6 h-52 w-52 mb-3"
             onClick={onClick}
         >
             {cardDetails.image && (

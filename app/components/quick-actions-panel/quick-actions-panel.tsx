@@ -1,18 +1,20 @@
 'use client';
 
 import React from 'react';
-import Card from '../__generics__/card/card';
+import CardWithLink from '../__generics__/card/card-with-link';
 
 const QuickActionsPanel = () => {
     return (
-        <div className="flex flex-row justify-center gap-16 w-9/12 h-3/4">
-            <Card
+        <div className="flex flex-col gap-16 items-center justify-evenly w-9/12 h-3/4">
+            <CardWithLink
+                name="browseByName"
+                link="/browse-by-name"
                 cardDetails={{ name: 'Browse by Name' }}
-                onClick={() => console.log('klikłem')}
             />
-            <Card
+            <CardWithLink
+                name="browseByLocation"
+                link="/browse-by-location"
                 cardDetails={{ name: 'Browse by Location' }}
-                onClick={() => console.log('klikłem')}
             />
         </div>
     );
