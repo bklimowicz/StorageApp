@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="w-full h-full">
             <body
-                className={`${inter.className} flex h-full w-full items-center flex-col`}
+                className={`${inter.className} flex h-full w-full items-center flex-col bg-background text-primary`}
             >
                 <HeaderPanel />
                 <div className="w-full h-[700px]">{children}</div>

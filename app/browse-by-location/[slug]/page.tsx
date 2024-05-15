@@ -11,7 +11,7 @@ async function getData(slug: string) {
     );
 
     if (!res.ok) {
-        throw new Error('Error fetching data');
+        console.error('Error fetching data');
     }
 
     return res.json();

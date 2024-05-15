@@ -48,7 +48,16 @@ const AddNewItem = () => {
                     name="productQuantity"
                     placeholder="Ilość produktu"
                 />
-                <input type="submit" className="border text-white" />
+                <div className="flex justify-between items-center">
+                    <input
+                        type="submit"
+                        className="text-primary w-[180px] h-[60px]"
+                    />
+                    <input
+                        type="reset"
+                        className="border bg-accent text-primary w-[180px] h-[60px]"
+                    />
+                </div>
             </form>
         </>
     );

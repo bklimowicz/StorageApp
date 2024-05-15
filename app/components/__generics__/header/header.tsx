@@ -5,7 +5,7 @@ interface HeaderProps {
 }
 
 const Header = ({ title }: HeaderProps) => {
-    return <div className="text-5xl pt-5 pb-10">{title}</div>;
+    return <div className="text-5xl pt-5 pb-5 flex justify-center items-center">{title}</div>;
 };
 
 export default Header;
